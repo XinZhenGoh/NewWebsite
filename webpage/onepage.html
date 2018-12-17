@@ -145,22 +145,174 @@
         </div>
 
         <h2 class="text-secondary">
-          testing
-        </h2>
-        <p>testing</p>
-
-
-          <h2 class="text-secondary">
-            testing</h2>
-          <p>testing</p>
+          What is a singleton class?
+        </h2><p>
+          A class that can only be instantiated once</p>
 
           <h2 class="text-secondary">
-            testing</h2>
-          <p>testing</p>
+            Explain inheritance
+          </h2><p>
+            A class can inherit the implementation of its parent class, while also extending/ changing parts of it. Allows code reuse when things have in common
+          </p>
+
+          <h2 class="text-secondary">
+            Describe a deadlock situation
+          </h2><p>
+            Thread A without releasing x requests y, but wait for B to release it.
+            Thread B, without releasing y, requests resource x,but have to wait for A to release it.
+            Both threads are now waiting for each other to release their resource, but none will until the other does.
+           </p>
+
+        <h2 class="text-secondary">
+          What is a non functional requirement?
+        </h2><p>
+          It specifies general behavior requirements of the system. It describes what you want your system to be, rather then what it should do.
+          accessibility, maintainability & security.
+         </p>
+
+        <h2 class="text-secondary">
+          What is functional requirement?
+        </h2><p>
+        A functional requirement describes the specific functionality you want of your system.
+        </p>
+
+        <h2 class="text-secondary">
+        What are the steps of the waterfall method?
+        </h2><p>
+        Requirements <br/>
+        Design<br/>
+        Implementation<br/>
+        Verification<br/>
+        Maintenance
+        </p>
+
+        <h2 class="text-secondary">
+          What is the purpose of the daily stand-up meeting in SCRUM?
+        </h2><p>
+        Touch base on what has been done, what will be done in the day & note potential obstacles. The team ask themselves these questions:
+        <br/>
+        -What did I do yesterday?<br/>
+        -What will I do today?<br/>
+        -Have I discovered anything that might impede our progress towards the sprint goal?
+      </p>
+
+        <h2 class="text-secondary">
+          What are the benefits and disadvantages of paper prototyping?
+        </h2><p>
+        Benefits: Quick and cheap, allows entire team to take part in design process.
+        <br/>
+        Disadvantages: Hard to emulate true feel of the system. etc
+      </p>
+
+        <h2 class="text-secondary">
+          What is the purpose of a sequence diagram/event diagram?
+        </h2><p>
+        A sequence diagram shows the interactios, sent messages and retur values, between objects, and in what order they are sent.
+        This gives an idea of the runtime flow of the application
+      </p>
+
+        <h2 class="text-secondary">
+          What is an ER diagram?
+        </h2><p>
+        Insert explanation here
+      </p>
+
+        <h2 class="text-secondary">
+          What is a UML diagram?
+        </h2><p>
+        Insert explanation here
+      </p>
+
+
+        <h2 class="text-secondary">
+          What is modularization?
+        </h2><p>
+        Modularization is a technique where the software is divided into several modules that work independently of each other.
+        Better maintainability.
+      </p>
+
+
+        <h2 class="text-secondary">
+          What is the MVC architecture?
+        </h2><p>
+        Used most commonly for GUI applications, seperating data from user interface. Model layer holds the data, the view layer outputs the data to user and controller is responsible for making changes to the model based on user input.
+      </p>
+
+
+        <h2 class="text-secondary">
+          What is a directed acyclic graph?
+        </h2><p>
+        A directed (edges have direction) graph without any cycles. It is impossible to start at a node, and follow and directed edges return to that same node).
+      </p>
+
+
+        <h2 class="text-secondary">
+          What is the difference between black box and white box testing?
+        </h2><p>
+        Black box testing only tests a function for correct output given an input, white box testing also tests if the implementation is correct.
+      </p>
+
+
+        <h2 class="text-secondary">
+          What is the difference between a queue and a stack?
+        </h2><p>
+        A queue is based on the FIFO - First In, First Out - principle, first to enter, first to be removed.
+        <br/>
+        A stack is based on the LIFO - Last In, First Out - last to enter, first to go out.
+      </p>
+
+
+        <h2 class="text-secondary">
+          What is a recursive function?
+        </h2><p>
+        A recursive function is a function that calls itself. At each function call, one or more parameters are changed. The recursion continues until a base case (a set of parameters which return a value)
+        is reached, and the recursion is resolved.
+      </p>
+
+
+        <h2 class="text-secondary">
+          What is the average and worst case run time of the quicksort algorithm?
+        </h2><p>
+        0(n log n) - Average case
+        0(n^2) - Worst case
+      </p>
+
+
+        <h2 class="text-secondary">
+         How does the A* algorithm work?
+        </h2><p>
+        A* is a path finding algorithm that words on weighted graphs with a heuristic function that estimates the cost of travelling from node n to the goal node.
+        <br/>
+        The nodes to be considered at each step is stored in a collection/priority queue.
+        It starts by adding every node that is adjacent to the start node into the queue.
+        Using the formula: f(n) = g(n) + h(n).<br/>
+        g(n) is the actual cost from the start node to node n. <br/>
+        h(n) is the heuristic function.
+      </p>
+
+        <h2 class="text-secondary">
+          What is inner and outer join?
+        </h2><p>
+        Inner join joins the intersection between the tables, only keys that exist in both tables will be kept in joined table.
+        <br/>
+        Outer join works as the union between the tables, all rows will be included in the joined table.
+        (Left outer join keeps all rows from the left table, while only the rows with keys that also exists in the left table are included from the right table.
+      </p>
+
+        <h2 class="text-secondary">
+          What is an SQL injection, and how they are prevented?
+        </h2><p>
+        SQL injection is when SQL statements are entered into data fields that are to be stored in an SQL database.
+        The most usual mitigation techniques include parameterized statements, escaping characters with meaning in SQL, pattern checking and limiting database permissions.
+      </p>
+
+
+
+
 
         <ul id="faq-list" class="wow fadeInUp">
           <li>
-            <a data-toggle="collapse" class="collapsed" href="#faq1">What is object oriented programming? <i class="ion-android-remove"></i></a>
+            <a data-toggle="collapse" class="collapsed" href="#faq1">Difference between object oriented programming vs functional programming? <i class="ion-android-remove"></i></a>
             <div id="faq1" class="collapse" data-parent="#faq-list">
               <p>
                 I cant answer this yet...
@@ -169,13 +321,35 @@
           </li>
 
           <li>
-            <a data-toggle="collapse" class="collapsed" href="#faq2">What is object oriented programming? <i class="ion-android-remove"></i></a>
+            <a data-toggle="collapse" class="collapsed" href="#faq2">When is the waterfall method favored over Agile? <i class="ion-android-remove"></i></a>
             <div id="faq2" class="collapse" data-parent="#faq-list">
               <p>
                 I cant answer this yet...
               </p>
             </div>
           </li>
+
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq3">What is the improvements made between Java 8 & 10? <i class="ion-android-remove"></i></a>
+            <div id="faq3" class="collapse" data-parent="#faq-list">
+              <p>
+                I cant answer this yet...
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq4">When is the waterfall method favored over Agile? <i class="ion-android-remove"></i></a>
+            <div id="faq4" class="collapse" data-parent="#faq-list">
+              <p>
+                I cant answer this yet...
+              </p>
+            </div>
+          </li>
+
+
+
+
         </ul>
 
 
