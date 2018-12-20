@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> Algorithms. by CodingSelect</title>
+  <title> Angular Understanding. by CodingSelect</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -147,232 +147,94 @@
       <div class="container">
 
         <div class="section-header">
-          <h3 class="section-title">Algorithms & Data Structures</h3>
+          <h3 class="section-title">Angular Basic Understanding</h3>
           <span class="section-divider"></span>
           <!--<p class="section-description">Providing a one page compiled list of all computer science knowledge. Use this information wisely</p>-->
         </div>
 
         <h2 class="text-secondary">
-          Bubble Sort
-        </h2>
-        <p>Starting on the left, compare adjacent items and keep “bubbling” the larger one to the right (it’s in its final place). Bubble sort the remaining N -1 items.
-        <p>Best case: O(N), Worst case:O(N^2)</p>
-
-        <script src="https://gist.github.com/XinZhenGoh/eff870b3e0b6ccc7050eed9201ce9786.js"></script>
-        <br/>
-
-        <h2 class="text-secondary">
-          Quick Sort
+          What are the key components for Angular 2+?
         </h2>
         <p>
-          Pick a “pivot” element.
-          “Partition” the array into 3 parts:
-          <br/>-First part: all elements in this part is less than the pivot.
-          <br/>-Second part: the pivot itself (only one element!)
-          <br/>-Third part: all elements in this part is greater than or equal to the pivot.
-          <br/>Then, apply the quicksort algorithm to the first and the third part. (recursively)
-          <br/>4 versions of quicksort implementations:
-          First element as pivot.
-          Last element as pivot (implemented below)
-          Random element as pivot.
-          Median as pivot.
-        <p>Best case: O(nlogn), Worst case:O(N^2)</p>
-        </p>
-        <script src="https://gist.github.com/XinZhenGoh/9109061ea57cd2daf4d9fcde16fdcf41.js"></script>
-        <br/>
-
-        <h2 class="text-secondary">
-          Merge Sort
-        </h2>
-        <p>
-          Merge sort is a “divide and conquer” algorithm wherein we first divide the problem into subproblems. When the solutions for the subproblems are ready, we combine them together to get the final solution to the problem.<br/>Divide: In this step, we divide the input array into 2 halves, the pivot being the midpoint of the array. This step is carried out recursively for all the half arrays until there are no more half arrays to divide.
-          <br/>Conquer: In this step, we sort and merge the divided arrays from bottom to top and get the sorted array.
-          <br/><br/>The array is recursively divided into two halves until the size becomes 1. Once the size becomes 1, the merge processes come into action and start merging arrays back while sorting:
-        <p>Best case: O(nlogn), Worst case:O(nlogn)</p></p>
-        <script src="https://gist.github.com/XinZhenGoh/e52241ff5f46fa3f08d2f987215b3d4b.js"></script>
-        <br/>
-
-
-        <h2 class="text-secondary">
-          Insertion Sort
-        </h2>
-        <p>
-          Insertion sort algorithm somewhat resembles selection sort.
-          <br/>Array is imaginary divided into two parts - sorted one and unsorted one.
-          <br/>At the beginning, sorted part contains first element of the array and unsorted one contains the rest. At every step, algorithm takes first element in the unsorted part and inserts it to the right place of the sorted one. When unsorted part becomes empty, algorithm stops.
-        <p>Best case: O(n), Worst case:O(N^2)</p>
-        </p>
-        <script src="https://gist.github.com/XinZhenGoh/0ee0f9104a04fa363da48316dfada82c.js"></script>
-        <br/>
-
-        <h2 class="text-secondary">
-          Selection Sort
-        </h2>
-        <p>
-          The idea of algorithm is quite simple. Array is imaginary divided into two parts - sorted one and unsorted one.
-          <br/>At the beginning, sorted part is empty, while unsorted one contains whole array. At every step, algorithm finds minimal element in the unsorted part and adds it to the end of the sorted one.
-          <br/>When unsorted part becomes empty, algorithm stops.
-        <p>Best case: O(N^2), Worst case:O(N^2)</p>
-        <script src="https://gist.github.com/XinZhenGoh/1783527f7b593567e8cb84f447df6432.js"></script>
+          Module – This is used to break the application into the logical pieces of the program code and each piece of code or module is designed to perform a single and unique task.
+          <br/>-Component – This is used to bring the modules together.
+          <br/>-Templates – This is used to define the Views of an Angular JS application.
+          <br/>-Metadata – This is used to add more data to an Angular JS application.
+          <br/>-Service – This component is used to develop the components, which can be used to share in the entire application.
         </p>
 
         <br/>
 
         <h2 class="text-secondary">
-          Bucket Sort
+          What is NPM?
         </h2>
-        <p>
-
-        <p>Best case: O(n+k), Worst case:O(N^2)</p>
-        </p>
-        <br/>
-
-        <h2 class="text-secondary">
-          Shell Sort
-        </h2>
-        <p>
-
-        <p>Best case: O(nlogn), Worst case:O(nlogn^2)</p>
-        </p>
-        <br/>
-
-        <h2 class="text-secondary">
-          Heap Sort
-        </h2>
-        <p>
-
-        <p>Best case: O(nlogn), Worst case:O(nlogn)</p>
-        </p>
+        <p> NPM stands for node package manager. It is used for installing dependencies for javascript packages.</p>
 
         <br/>
 
         <h2 class="text-secondary">
-          Compiled Big-O Notations
+          What is Angular CLI? List the command to install Angular CLI?
         </h2>
-        <p></p>
+        <p>
+          Angular CLI is Command Line Interface for Angular that runs Webpack.You can use npm install -g @angular/cli command to install angular CLI.
+        <br/>It can generate components, routes, services, and pipes with the help of commands.
+        </p><br/>
 
-        <br/>
+        <h2 class="text-secondary">
+          How to create a new project in angular js using CLI.
+        </h2>
+        <p>
+          fter installing Angular CLI run ng new project-name command to create a new Angular project.
+        </p><br/>
+
+        <h2 class="text-secondary">
+          What are Decorators?
+        </h2>
+        <p>
+          Decorators are functions that adds metadata to class members and functions. It was proposed in ES2016 and implemented in Typescript.
+        </p><br/>
+
+        <h2 class="text-secondary">
+          What are Directives?
+        </h2>
+        <p>
+          Decorators are functions that adds metadata to class members and functions. It was proposed in ES2016 and implemented in Typescript.
+        </p><br/>
+
+        <h2 class="text-secondary">
+          List the types of Data Binding supported by Angular 5?
+        </h2>
+        <p>
+          Angular 5 supports four types of Data Binding They are
+          <br/>-String Interpolation
+          <br/>-Property Binding
+          <br/>-Event Binding
+          <br/>-Two-way-binding
+        </p><br/>
+
+        <h2 class="text-secondary">
+          How to run Angular 5 application locally during development?
+        </h2>
+        <p>
+          ng serve command is used to run Angular5 application locally during development. To start development server on specific port ng serve -p aPortNumber command is used.
+        </p><br/>
+
+        <h2 class="text-secondary">
+          Why Angular 2+ over AngularJS?
+        </h2>
+        <p>
+          It is a modular framework in which code is divided into individual procedures that offer a similar kind of functionality, improving
+          testing and maintenance of application.
+        </p><br/>
+
+
 
 
 
       </div>
     </section><!-- #faq -->
 
-    <section id="data">
-      <div class="container">
-        <div class="section-header">
-          <h3 class="section-title">Data Structures</h3>
-          <span class="section-divider"></span>
-          <!--<p class="section-description">Providing a one page compiled list of all computer science knowledge. Use this information wisely</p>-->
-        </div>
 
-        <h2 class="text-secondary">
-          Nodes
-        </h2>
-        <p></p>
-
-        <br/>
-
-        <h2 class="text-secondary">
-          List
-        </h2>
-        <p></p>
-
-        <br/>
-
-        <h2 class="text-secondary">
-          ArrayList
-        </h2>
-        <p>Main difference between Array vs ArrayList in Java is static nature of Array and dynamic nature of ArrayList. Once created you can not change size of Array but ArrayList can re-size itself when needed.</p>
-
-        <br/>
-
-        <h2 class="text-secondary">
-          LinkedList
-        </h2>
-        <p></p>
-
-        <br/>
-
-        <h2 class="text-secondary">
-          Doubly - LinkedList
-        </h2>
-        <p></p>
-
-        <br/>
-
-        <h2 class="text-secondary">
-          HashMap
-        </h2>
-        <p>
-          Apply a hashing algorithm to the value to generate an index (Key). A key can hold many different values.
-          <br/>Linear probing - linearly look for a space and insert value into hash index
-          <br/>
-        </p>
-
-        <br/>
-
-
-        <h2 class="text-secondary">
-          Dynamic Array
-        </h2>
-        <p></p>
-
-        <br/>
-
-
-        <h2 class="text-secondary">
-          Stack & Queue
-        </h2>
-        <p></p>
-
-        <br/>
-
-        <h2 class="text-secondary">
-          Tree Traversal
-        </h2>
-        <p></p>
-
-        <br/>
-
-        <h2 class="text-secondary">
-          Binary Search Tree
-        </h2>
-        <p></p>
-
-        <br/>
-
-        <h2 class="text-secondary">
-          Red Black Tree
-        </h2>
-        <p></p>
-
-        <br/>
-
-        <h2 class="text-secondary">
-          2-3 Tree
-        </h2>
-        <p></p>
-
-        <br/>
-
-        <h2 class="text-secondary">
-          Depth First Search (DFS)
-        </h2>
-        <p></p>
-
-        <br/>
-
-        <h2 class="text-secondary">
-          Depth First Search (BFS)
-        </h2>
-        <p></p>
-
-        <br/>
-
-
-      </div>
-    </section><!-- #faq -->
 
 
 
