@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> Java & OOP Understanding. by CodingSelect</title>
+  <title> SQL understanding. by CodingSelect</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -148,7 +148,7 @@
       <div class="container">
 
         <div class="section-header">
-          <h3 class="section-title">Java Basic Understanding & Object Oriented Programming</h3>
+          <h3 class="section-title">SQL basic understanding</h3>
           <span class="section-divider"></span>
           <!--<p class="section-description">Providing a one page compiled list of all computer science knowledge. Use this information wisely</p>-->
         </div>
@@ -162,109 +162,103 @@
         <br/>
 
         <h2 class="text-secondary">
-          Object/Instance
+          What are Tables and Fields?
         </h2>
         <p>
-          Objects have a physical existence while a class is just a logical definition. Ray is an object of the class human.
+          A table is a set of data that are organized in a model with Columns and Rows. Columns can be categorized as vertical, and Rows are horizontal. A table has specified number of column called fields but can have any number of rows which is called record.        </p>
+        <br/>
+
+        <h2 class="text-secondary">
+          What is a primary key?
+        </h2>
+        <p>
+          A primary key is a combination of fields which uniquely specify a row. This is a special kind of unique key, and it has implicit NOT NULL constraint. It means, Primary key values cannot be NULL.        </p>
+        <br/>
+
+        <h2 class="text-secondary">
+          What is a unique key?
+        </h2>
+        <p>
+          A Unique key constraint uniquely identified each record in the database. This provides uniqueness for the column or set of columns.        </p>
+        <br/>
+
+        <h2 class="text-secondary">
+          What is a foreign key?
+      </h2>
+        <p>
+          A foreign key is one table which can be related to the primary key of another table. Relationship needs to be created between two tables by referencing foreign key with the primary key of another table.
         </p>
         <br/>
 
         <h2 class="text-secondary">
-          Abstraction
+          What is normalization?
         </h2>
         <p>
-          Abstraction means, showcasing only the required things to the outside world while hiding the details
-        <br/>
+          Normalization is the process of minimizing redundancy and dependency by organizing fields and table of a database. The main aim of Normalization is to add, delete or modify field that can be made in a single table
         </p>
         <br/>
 
         <h2 class="text-secondary">
-          Encapsulation
-        </h2><p>
-        The variables or data of a class is hidden from any other class and can be accessed only through any member function of own class in which they are declared.
-      </p>
-        <br/>
-
-        <h2 class="text-secondary">
-          Polymorphism
+          What is Denormalization.
         </h2>
         <p>
-          Polymorphism is a concept, which allows us to redefine the way something works, by either changing how it is done or by changing the parts using which it is done. Both the ways have different terms for them.
-          <br/>If we walk using our hands, and not legs, here we will change the parts used to perform something. Hence this is called Overloading.
-          <br/>And if there is a defined way of walking, but I wish to walk differently, but using my legs, like everyone else. Then I can walk like I want, this will be called as Overriding.
+          DeNormalization is a technique used to access the data from higher to lower normal forms of database. It is also process of introducing redundancy into a table by incorporating data from the related tables.
         </p>
         <br/>
 
         <h2 class="text-secondary">
-         Recursion vs Iteration
+          What is a constraint?
         </h2>
         <p>
-          Objects have a physical existence while a class is just a logical definition. Ray is an object of the class human.
+          Constraint can be used to specify the limit on the data type of table. Constraint can be specified while creating or altering the table statement. Sample of constraint are.
+
+          <br/>NOT NULL.
+          <br/>CHECK.
+          <br/>DEFAULT.
+          <br/>UNIQUE.
+          <br/> PRIMARY KEY.
+          <br/>FOREIGN KEY.
         </p>
         <br/>
 
         <h2 class="text-secondary">
-          Post vs Pre Increment
+          What is data Integrity?
         </h2>
         <p>
-          <br/>Post-Increment : Value is first used for computing the result and then incremented.
-          <br/>Pre-Increment : Value is incremented first and then result is computed.
+          Data Integrity defines the accuracy and consistency of data stored in a database. It can also define integrity constraints to enforce business rules on the data when it is entered into the application or database.
         </p>
         <br/>
 
         <h2 class="text-secondary">
-
+          What is clustered index?
         </h2>
         <p>
-
+          Clustered index is used for easy retrieval of data from the database by altering the way that the records are stored. Database sorts out rows by the column which is set to be clustered index.
         </p>
         <br/>
 
         <h2 class="text-secondary">
-
+        What is the Union operator?
         </h2>
         <p>
-
+          UNION operator is used to combine the results of two tables, and it eliminates duplicate rows from the tables.
         </p>
         <br/>
 
         <h2 class="text-secondary">
-
+          What is the difference between TRUNCATE and DROP statements?
         </h2>
         <p>
-
+          TRUNCATE removes all the rows from the table, and it cannot be rolled back. DROP command removes a table from the database and operation cannot be rolled back.
         </p>
         <br/>
 
         <h2 class="text-secondary">
-
+          How to select unique records from a table?
         </h2>
         <p>
-
-        </p>
-        <br/>
-
-        <h2 class="text-secondary">
-
-        </h2>
-        <p>
-
-        </p>
-        <br/>
-
-        <h2 class="text-secondary">
-
-        </h2>
-        <p>
-
-        </p>
-        <br/>
-
-        <h2 class="text-secondary">
-
-        </h2>
-        <p>
-
+          Select unique records from a table by using DISTINCT keyword.
+          <br/>Select DISTINCT StudentID, StudentName from Student.
         </p>
         <br/>
 
@@ -309,13 +303,12 @@
         <br/>
 
         <h2 class="text-secondary">
-        Java Code Examples
+
         </h2>
         <p>
-          <script src="https://gist.github.com/XinZhenGoh/1a379203c40fe16ba4015c39e0ae87be.js"></script>
+
         </p>
         <br/>
-
 
 
 

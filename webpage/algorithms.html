@@ -305,13 +305,21 @@
           HashMap
         </h2>
         <p>
-          Apply a hashing algorithm to the value to generate an index (Key). A key can hold many different values.
+          HashMap is a data-structure that stores {Key, Value} pairs. HashMap stores unique keys. The get(key) and put(key, value) is achieved in amortized O(1) time.
+         <br/> Apply a hashing algorithm to the value to generate an index (Key). A key can hold many different values.
           <br/>Linear probing - linearly look for a space and insert value into hash index
-          <br/>
+          <script src="https://gist.github.com/XinZhenGoh/f20890fc56076823720e9ae41344cf83.js"></script>
+        </p>
+        <br/>
+
+        <h2 class="text-secondary">
+         Seperate Chaining
+        </h2>
+        <p>
+          Have an array of lists. If there is more than one key hashed to the same index, append to the list at that index in the array. A decent hash function guarantees that the keys are evenly distributed across the indices. This is what Java uses.
         </p>
 
         <br/>
-
 
         <h2 class="text-secondary">
           Dynamic Array
@@ -364,7 +372,7 @@
         <br/>
 
         <h2 class="text-secondary">
-          Depth First Search (BFS)
+          Breadth First Search (BFS)
         </h2>
         <p></p>
 
