@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 .centered {
   font-family: "Montserrat", sans-serif;
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   color: white;
   top: 70%;
@@ -1140,10 +1140,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
   padding: 40px 0 0 0;
   overflow: hidden;
+
 }
 
 #gallery .container-fluid {
   padding: 0px;
+  font-size: 18px;
 }
 
 #gallery .gallery-overlay {
