@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 50vh;
   background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)), url("../img/bellagio.jpg") center top no-repeat;
   background-size: cover;
-  position: page;
+  position: sticky;
 }
 
 #intro2 {
